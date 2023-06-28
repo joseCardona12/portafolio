@@ -182,6 +182,10 @@ body.content__dark .list__item a{
 
 @media (max-width: 1020px){
 
+    .content__header{
+        gap: 0;
+    }
+
     .header__hamburger{
         display: flex;
         flex-direction: column;
