@@ -151,6 +151,10 @@ body.content__dark .button__icon{
     color: var(--background-color-three);
 }
 
+body.content__dark .list__item a{
+    color: var(--background-color-three);
+}
+
 /* Código para el responsive*/
 
 @media (max-width: 1600px){
@@ -166,10 +170,6 @@ body.content__dark .button__icon{
         align-items: flex-end;
         gap: 1rem;
 
-    }
-
-    .list__item a{
-        color: var(--background-color-three);
     }
 
     .header__content--switch{
