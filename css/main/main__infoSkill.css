@@ -1,0 +1,36 @@
+@import url(../variables.css);
+
+
+.main__content--infoSkill{
+    background-color: var(--backfround-color-modal);
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.infoSkill__show{
+    opacity: 1;
+    pointer-events: unset;
+
+}
+
+.content__modal{
+    width: 30%;
+    max-width: 350px;
+    background-color: var(--background-color-three);
+    padding: 3rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    cursor: pointer;
+}
+
+.txtModal{
+    color: var(--background-color-second);
+    font-family: var(--fontFamily-first);
+}

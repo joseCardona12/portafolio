@@ -1,0 +1,269 @@
+@import url(../variables.css);
+
+
+/* main - cuerpo ------------------> content__main*/
+
+
+.main__content--first{
+    background-color: var(--background-color-four);
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 0 6rem;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fontFamily-first);
+}
+
+/* section ----------------------> main__left*/
+
+.main__left{
+    width: 60%;
+    padding-left: 2rem;
+}
+
+
+.main__title .title{
+    font-size: 3rem;
+    color: var(--background-color-second);
+
+}
+
+.main__paragraph{
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.main__paragraph .paragraph{
+    font-size: 16px;
+    color: var(--text-color-second);
+}
+
+.main__buttons .main__item{
+    border-radius: 6px;
+    border: 1px solid var(--background-color-three);
+    padding: .5rem;
+    display: block;
+    width: 30%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: width 300ms;
+}
+
+.main__buttons .main__item:hover{
+
+    width: 32%;
+
+}
+
+.main__item .bi{
+    padding-right: 1rem;
+
+}
+
+.main__item.linkedin:hover .bi,
+.main__item.whatsapp:hover .bi,
+.main__item.instagram:hover .bi,
+.main__item.github:hover .bi{
+    color: var(--background-color-first);
+}
+
+
+.main__item.linkedin:hover{
+    background-color: var(--background-color-linkedin);
+    border: 1px solid var(--background-color-linkedin);
+    color: var(--background-color-first);
+}
+
+.main__item.whatsapp:hover{
+    background-color: var(--background-color-whatsapp);
+    border: 1px solid var(--background-color-whatsapp);
+    color: var(--background-color-first);
+}
+
+.main__item.instagram:hover{
+    background-color: var(--background-color-three);
+    border: 1px solid var(--background-color-three);
+    color: var(--background-color-first);
+}
+
+.main__item.github:hover{
+    background-color: var(--background-color-second);
+    border: 1px solid var(--background-color-second);
+    color: var(--background-color-first);
+}
+
+/* section --------------------------> main__right */
+
+.main__right{
+    width: 30%;
+    display: flex;
+}
+
+.main__image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main__image img{
+    width: 80%;
+    transition: transform 300ms;
+
+}
+
+.main__image img:hover{
+    transform: scale(1.04);
+}
+
+/* Codigo para el modo oscuro---------------------------->content__dark*/
+
+body.content__dark .main__content--first{
+    background-color: var(--background-color-second);
+
+}
+
+body.content__dark .main__title .title{
+    color: var(--background-color-three);
+}
+
+body.content__dark .main__paragraph .paragraph{
+    color: var(--background-color-three);
+}
+
+body.content__dark .main__item{
+    color: var(--background-color-three);
+}
+
+body.content__dark .main__item .bi{
+    color: var(--background-color-three);
+}
+
+body.content__dark .main__item.github:hover .bi,
+body.content__dark .main__item.instagram:hover .bi,
+body.content__dark .main__item.linkedin:hover .bi,
+body.content__dark .main__item.whatsapp:hover .bi{
+    color: var(--background-color-first);
+}
+
+body.content__dark .main__item.github:hover{
+
+    border: 1px solid var(--background-color-three);
+    background-color: var(--background-color-three);
+
+}
+
+/* Código para el responsive*/
+
+@media (max-width: 1280px){
+
+    .main__paragraph{
+        width: 80%;
+    }
+
+    .main__buttons .main__item{
+        width: 40%;
+    }
+
+    .main__buttons .main__item:hover{
+        width: 42%;
+    }
+
+    .main__right{
+
+        width: 40%;
+
+    }
+}
+
+@media (max-width: 1120px){
+
+
+    .main__image img{
+        width: 100%;
+        transition: transform 300ms;
+    
+    }
+
+}
+
+@media (max-width: 920px){
+
+
+    .main__buttons{
+        display: flex;
+        gap: .6rem;
+    }
+
+    .main__item{
+        padding: 0rem;
+        height: 50px;
+    }
+
+    .main__item.github,
+    .main__item.whatsapp,
+    .main__item.linkedin,
+    .main__item.instagram{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__right{
+        display: none;
+    }
+    
+    .main__left{
+        width: 100%;
+    }
+
+    .main__paragraph{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 720px){
+    
+    .main__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 93%;
+    }
+
+    .main__item.github,
+    .main__item.whatsapp,
+    .main__item.instagram,
+    .main__item.linkedin
+    {
+        width: 100%;
+    }
+
+    .main__item.github:hover,
+    .main__item.whatsapp:hover,
+    .main__item.instagram:hover,
+    .main__item.linkedin:hover{
+        width: 92%;
+    }
+
+}
+
+@media (max-width: 520px){
+
+    .main__content--first{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .main__content--first{
+        padding: .4rem;
+    }
+
+}
+
+
+

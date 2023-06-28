@@ -1,0 +1,87 @@
+@import url(variables.css);
+
+/* Contenido del footer ------------> footer__content */
+
+.footer__content{
+    padding: 4rem;
+    background-color: var(--background-color-second);
+    margin-top: 2rem;
+}
+
+.footer__left{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+
+/* logo footer --------------> footer__logo*/
+
+.footer__logo a{
+    text-decoration: none;
+}
+
+.logo__text{
+    color: var(--background-color-three);
+}
+
+/* lista de footer -------------------> nav__list */
+
+.nav__list--footer .list__item--footer a{
+    color: var(--background-color-three);
+}
+
+/* Parrafo del footer ------------------> footer__paragraph */
+
+.footer__paragraph{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-family: var(--fontFamily-first);
+    font-size: 13px;
+}
+
+.footer__paragraph p{
+    color: var(--background-color-three);
+}
+
+/* Código para el modo oscuro---------------->*/
+
+body.content__dark .footer__content{
+    background-color: var(--background-color-six);
+}
+
+/* Código para el responsive------------------->*/
+
+@media (max-width: 720px){
+    .footer__content{
+        padding: 4rem;
+    }
+
+    .nav__list--footer{
+
+        flex-direction: column;
+
+    }
+
+    .footer__left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .footer__logo{
+        width: 20%;
+    }
+}
+
+
+@media (max-width: 320px){
+
+    .footer__content{
+        padding: 2rem;
+    }
+
+}

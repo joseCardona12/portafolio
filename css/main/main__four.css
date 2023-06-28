@@ -1,0 +1,62 @@
+@import url(../variables.css);
+
+
+/* Contenido de Hobbies --------------------------> main__content--four */
+
+
+.main__content--four{
+    padding: 4rem;
+    height: 20%;
+    background-color: var(--background-color-five);
+    color: var(--background-color-three);
+    font-family: var(--fontFamily-first);
+}
+
+/* title del contenido de los hobbies*/
+
+.main__four--title{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color-second);
+    margin-bottom: 1rem;
+}
+
+/* lista de elementos de los hobbies se utilizó los mismos estilos de los skill*/
+
+/* Código para el modo oscuro-------------->*/
+body.content__dark .main__content--four{
+    background-color: var(--background-color-six);
+}
+
+body.content__dark .main__four--title,
+.main__five--title,
+.main__six--title{
+    color: var(--background-color-three);
+}
+
+body.content__dark .main__content--four hr,
+.main__content--five hr,
+.main__content--six hr{
+    border-color: var(--background-color-three);
+}
+
+body.content__dark .list__hobbie--item{
+    background-color: var(--background-color-second);
+    transition: border 400ms;
+
+}
+
+body.content__dark .list__hobbie--item:hover{
+    border: 1px solid var(--background-color-three);
+    box-shadow: 1px 1px 4px #5f5f5f;
+}
+
+/* Código para responsive*/
+
+@media (max-width: 320px){
+
+    .main__content--four{
+        padding: 2rem;
+    }
+
+}

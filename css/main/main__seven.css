@@ -1,0 +1,168 @@
+@import url(../variables.css);
+
+
+/* Contenido del apartado formulario left--------------> main__content--seven*/
+
+.main__content--seven{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 4rem;
+    font-family: var(--fontFamily-first);
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+
+}
+
+/* Imagen del formulario--------------> seve__left--image*/
+
+.main__seven--left{
+    width: 50%;
+}
+
+.seven__left--image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contenido del contacto right -------------> main__seven--right*/
+
+/* Title del form */
+
+.seven--title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph del form*/
+
+.seven__right--paragraph{
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.seven--paragraph{
+    font-size: 15px;
+}
+
+/* Contenido del form right -------------> seven__right--form"*/
+
+.right__form--group{
+    border: none;
+}
+
+.form__label{
+    display: block;
+    margin-bottom: .6rem;
+    font-size: 14px;
+}
+
+.form__input,
+.form__textArea{
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    outline: none;
+    background-color: var(--background-color-five);
+    margin-bottom: .4rem;
+    font-family: var(--fontFamily-first);
+    font-size: 12px;
+}
+/* Contenido del text area ------------------> right__form--group */
+
+.form__label--area{
+    display: block;
+    margin-bottom: .5rem;
+}
+
+/* Bton del form ----------------------> right__form--group--button*/
+
+.right__form--group--button{
+    width: 80%;
+    background-color: var(--background-color-three);
+    border: 1px solid var(--background-color-first);
+    border-radius: 6px;
+    padding: .7rem;
+    cursor: pointer;
+    transition: background-color 300ms;
+
+}
+
+.right__form--group--button:hover{
+    background-color: transparent;
+    border: 1px solid var(--background-color-three);
+}
+
+.form__button{
+    width: 100%;
+    color: var(--background-color-second);
+    text-decoration: none;
+}
+
+/* Código para modo oscuro---------------->*/
+body.content__dark .seven--title,
+.seven--paragraph,
+.form__label,
+.form__label--area{
+    color: var(--background-color-three);
+}
+
+body.content__dark .right__form--group--button{
+    border: 1px solid var(--background-color-three);
+    margin-top: 1rem;
+}
+
+body.content__dark .right__form--group--button:hover .form__button{
+    color: var(--background-color-three);
+}
+
+/* Código para el responsive ----------------------> */
+
+@media (max-width: 1120px){
+
+
+    .main__content--seven{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__seven--left{
+        display: none;
+    }
+
+    .form__textArea{
+        margin-bottom: 1.5rem;
+    }
+
+
+
+}
+
+@media (max-width: 720px){
+
+    .form__input,
+    .form__textArea{
+        width: 100%;
+
+    }
+
+
+}
+
+
+@media (max-width: 320px){
+
+    .seven__right--paragraph{
+        width: 100%;
+    }
+
+    .main__content--seven{
+        padding: 2rem;
+    }
+
+}

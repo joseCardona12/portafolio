@@ -1,0 +1,53 @@
+@import url(../variables.css);
+
+/* Contenido experiencia ----------------> main__content--second*/
+.main__content--second{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    background-color: var(--background-color-five);
+    color: var(--background-color-second);
+    padding: 4rem;
+    height: 40%;
+    max-height: 500px;
+    font-family: var(--fontFamily-first);
+}
+
+.main__second--left{
+    width: 60%;
+}
+
+/* Código para el modo oscuro*/
+body.content__dark .main__content--second{
+    background-color: var(--background-color-six);
+    color: var(--background-color-three);
+}
+
+/* Código para el responsive-------------->*/
+
+@media (max-width: 1120px){
+
+    .main__content--second{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 920px){
+
+    .main__second--left{
+        width: 90%;
+    }
+}
+
+@media (max-width: 320px){
+
+    .main__content--second{
+        padding: 2.5rem;
+    }
+
+    .main__second--left{
+        width: 100%;
+    }
+
+}
