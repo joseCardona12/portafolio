@@ -67,6 +67,10 @@
     margin-bottom: 1rem;
 }
 
+.main__six--buttons a{
+    color: var(--background-color-three);
+}
+
 .six__button{
     border-radius: 6px;
     border: 1px solid var(--background-color-three);
@@ -83,6 +87,8 @@
     background-color: var(--background-color-three);
     color: var(--background-color-second);
 }
+
+
 
 /*Código para el modo oscuro */
 
@@ -143,11 +149,13 @@ body.content__dark .six__button:hover{
     }
 
     .main__six--buttons{
-        width: 70%;
+        width: 100%;
     }
 
     .main__six--buttons a{
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .main__six--buttons a:hover{

@@ -272,14 +272,27 @@ body.content__dark .list__item a{
 
 @media (max-width: 820px){
     .nav__list{
-        padding: 230px 230px;
+        padding: 230px 210px;
     }
 }
 
 @media (max-width: 720px){
+
     .nav__list{
-        padding: 230px 190px;
+        width: 100%;
+        padding: 230px 120px;
     }
+
+    .list__item{
+        width: 100px;
+    }
+
+    .list__item:hover{
+
+        width: 120px;
+
+    }
+
 }
 
 @media (max-width: 620px){

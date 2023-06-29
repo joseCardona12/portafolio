@@ -70,6 +70,13 @@
     color: var(--background-color-first);
 }
 
+.main__item.linkedin,
+.main__item.github,
+.main__item.whatsapp,
+.main__item.instagram{
+    color: var(--background-color-three);
+}
+
 
 .main__item.linkedin:hover{
     background-color: var(--background-color-linkedin);
@@ -225,6 +232,10 @@ body.content__dark .main__item.github:hover{
 }
 
 @media (max-width: 720px){
+
+    .main__content--first{
+        padding-bottom: 4rem;
+    }
     
     .main__buttons{
         display: flex;

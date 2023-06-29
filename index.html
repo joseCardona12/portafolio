@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/main/main__three.css">
     <link rel="stylesheet" href="css/main/main__four.css">
     <link rel="stylesheet" href="css/main/main__infoSkill.css">
+    <link rel="stylesheet" href="css/main/main__infoPerson.css">
     <link rel="stylesheet" href="css/main/main__five.css">
     <link rel="stylesheet" href="css/main/main__six.css">
     <link rel="stylesheet" href="css/main/main__seven.css">
@@ -34,7 +35,7 @@
         <div class="header__content--group">
             <nav class="header__content--nav" id="header__content--nav">
                 <ul class="nav__list">
-                    <li class="list__item"><a href="#">Experiencia</a></li>
+                    <li class="list__item"><a href="#main__content--second">Experiencia</a></li>
                     <li class="list__item"><a href="#">Skill</a></li>
                     <li class="list__item"><a href="#">Hobbies</a></li>
                     <li class="list__item"><a href="#">Formación</a></li>
@@ -101,11 +102,17 @@
             </section>
             <section class="main__right">
                 <div class="main__image">
-                    <img src="./assets/miPersona.png" alt="imagen_joseCardona">
+                    <img class="right__image--person" id="right__image--person" src="./assets/miPersona.png" alt="imagen_joseCardona">
                 </div>
+
+                <section class="modal__image--person" id="modal__image--person">
+                    <div class="content__modal--image">
+                        <p class="txtModal--image" id="txtModal--image"></p>
+                    </div>
+                </section>
             </section>
         </div>
-        <div class="main__content--second">
+        <div class="main__content--second" id="main__content--second">
             <section class="main__second--left">
                 <div class="main__second--title">
                     <h2 class="second__title">Experiencia</h2>
@@ -472,29 +479,29 @@
                     <form action="" class="rigth--form">
                         <fieldset class="right__form--group">
                             <label class="form__label" for="">Nombre</label>
-                            <input class="form__input" type="text" placeholder="Ingrese el nombre">
+                            <input class="form__input" type="text" placeholder="Ingrese el nombre" required data-tipo="nombre">
                             <span class="form__message--error"></span>
                         </fieldset>
 
                         <fieldset class="right__form--group">
                             <label class="form__label" for="">Correo</label>
-                            <input class="form__input" type="text" placeholder="Ingrese el correo">
+                            <input class="form__input" type="email" placeholder="Ingrese el correo" required data-tipo="correo">
                             <span class="form__message--error"></span>
                         </fieldset>
 
                         <fieldset class="right__form--group">
                             <label class="form__label" for="">Asunto</label>
-                            <input class="form__input" type="text" placeholder="Ingrese el asunto">
+                            <input class="form__input" type="text" placeholder="Ingrese el asunto" required data-tipo="asunto">
                             <span class="form__message--error"></span>
                         </fieldset>
 
                         <fieldset class="right__form--group">
                             <label class="form__label--area" for="">Mensaje</label>
-                            <textarea class="form__textArea" name="" id="" cols="30" rows="10">Ingrese el mensaje</textarea>
+                            <textarea class="form__input" name="" id="" cols="30" rows="10" required data-tipo="mensaje">Ingrese el mensaje</textarea>
                             <span class="form__message--error"></span>
                         </fieldset>
                         <div class="right__form--group--button">
-                            <a class="form__button" href="#">Enviar mensaje</a>
+                            <button type="submit" class="form__button">Enviar</button>
                         </div>
                     </form>
                 </div>

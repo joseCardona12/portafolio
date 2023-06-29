@@ -1,0 +1,43 @@
+@import url(../variables.css);
+
+
+.right__image--person{
+    cursor: pointer;
+}
+
+.modal__image--person{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 300ms;
+}
+
+
+.modal__image--person.active{
+    opacity: 1;
+    padding-left: 24rem;
+    padding-bottom: 10rem;
+
+}
+
+.content__modal--image{
+    width: 30%;
+    max-width: 200px;
+    background-color: var(--background-color-second);
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    padding: 1rem;
+    color: var(--background-color-three);
+}
+
+/* Código para el modo dark*/
+
+body.content__dark .content__modal--image{
+    background-color: var(--background-color-three);
+    color: var(--background-color-second);
+}

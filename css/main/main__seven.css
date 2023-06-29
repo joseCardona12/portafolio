@@ -52,6 +52,8 @@
 
 .right__form--group{
     border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .form__label{
@@ -72,6 +74,17 @@
     font-family: var(--fontFamily-first);
     font-size: 12px;
 }
+
+.form__input.error{
+    border: 1px solid var(--background-color-eight);
+
+}
+
+.form__message--error.error{
+    color: var(--background-color-eight);
+    font-size: 12px;
+}
+
 /* Contenido del text area ------------------> right__form--group */
 
 .form__label--area{
@@ -81,18 +94,8 @@
 
 /* Bton del form ----------------------> right__form--group--button*/
 
-.right__form--group--button{
-    width: 80%;
-    background-color: var(--background-color-three);
-    border: 1px solid var(--background-color-first);
-    border-radius: 6px;
-    padding: .7rem;
-    cursor: pointer;
-    transition: background-color 300ms;
 
-}
-
-.right__form--group--button:hover{
+.form__button:hover{
     background-color: transparent;
     border: 1px solid var(--background-color-three);
 }
@@ -100,8 +103,18 @@
 .form__button{
     width: 100%;
     color: var(--background-color-second);
+    width: 80%;
+    background-color: var(--background-color-three);
+    border: 1px solid var(--background-color-first);
+    border-radius: 6px;
+    padding: .7rem;
+    cursor: pointer;
+    transition: background-color 300ms;
     text-decoration: none;
+    
 }
+
+
 
 /* Código para modo oscuro---------------->*/
 body.content__dark .seven--title,
@@ -139,11 +152,13 @@ body.content__dark .right__form--group--button:hover .form__button{
         margin-bottom: 1.5rem;
     }
 
-
-
 }
 
 @media (max-width: 720px){
+
+    .seven__right--paragraph{
+        width: 100%;
+    }
 
     .form__input,
     .form__textArea{
@@ -151,6 +166,13 @@ body.content__dark .right__form--group--button:hover .form__button{
 
     }
 
+    .right__form--group--button{
+        width: 100%;
+    }
+
+    .form__button{
+        width: 100%;
+    }
 
 }
 
